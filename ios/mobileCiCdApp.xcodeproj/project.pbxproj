@@ -700,7 +700,8 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = CT33V5QFQW;
+						ProvisioningStyle = Manual;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -1218,10 +1219,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = CT33V5QFQW;
 				INFOPLIST_FILE = mobileCiCdApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -1231,7 +1232,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kenzan.mobileCiCdApp;
 				PRODUCT_NAME = mobileCiCdApp;
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "2046fda6-461e-4bbe-bff9-566a3bc69d79";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.kenzan.mobileCiCdApp";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -1241,9 +1243,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = CT33V5QFQW;
 				INFOPLIST_FILE = mobileCiCdApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -1253,7 +1256,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kenzan.mobileCiCdApp;
 				PRODUCT_NAME = mobileCiCdApp;
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "40982e47-413d-423b-8216-92d7ed3bbb01";
+				PROVISIONING_PROFILE_SPECIFIER = "Paul Barry MobileCiCDApp Profile";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
