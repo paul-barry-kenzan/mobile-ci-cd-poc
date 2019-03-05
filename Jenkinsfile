@@ -5,7 +5,7 @@ pipeline {
             steps {
                 sh 'npm --version'
                 sh 'node --version'
-                sh 'gem install fastlane'
+                sh 'brew cask install fastlane'
                 sh 'fastlane beta'
             }
         }
