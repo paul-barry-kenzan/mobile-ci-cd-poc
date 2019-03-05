@@ -1,10 +1,8 @@
 pipeline {
-    agent { docker { image 'node:10.15.2' } }
+    agent { docker { image 'rubylang/ruby:2.6.0-bionic' } }
     stages {
         stage('build') {
             steps {
-                sh 'npm --version'
-                sh 'node --version'
                 sh 'brew cask install fastlane'
                 sh 'fastlane beta'
             }
