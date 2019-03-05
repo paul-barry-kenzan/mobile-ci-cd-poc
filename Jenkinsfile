@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'brew cask install fastlane'
+                sh 'gem install fastlane -NV'
                 sh 'fastlane beta'
             }
         }
