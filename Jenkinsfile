@@ -1,5 +1,5 @@
 pipeline {
-    agent { docker { image 'rubylang/ruby:2.6.0-bionic' } }
+    agent { docker { image 'ruby:latest' } }
     stages {
         stage('build') {
             steps {
