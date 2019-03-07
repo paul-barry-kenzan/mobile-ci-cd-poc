@@ -1,9 +1,11 @@
 pipeline {
-    agent { docker { image 'ruby:latest' } }
+    agent { docker { image 'fastlanetools/fastlane' } }
     stages {
         stage('build') {
             steps {
-                sh 'sudo gem install fastlane -NV'
+                sh 'export LC_ALL=en_US.UTF-8'
+                sh 'export LANG=en_US.UTF-8'
+                sh 'cd ios'
                 sh 'fastlane beta'
             }
         }
