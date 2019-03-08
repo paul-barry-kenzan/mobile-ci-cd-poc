@@ -9,6 +9,7 @@ pipeline {
             agent {
                 docker {
                     image 'eddumelendez/fastlane'
+                    args '--entrypoint="ios"'
                 }
             }
             steps{
