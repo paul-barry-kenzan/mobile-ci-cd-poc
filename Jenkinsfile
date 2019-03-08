@@ -12,7 +12,6 @@ pipeline {
                 }
             }
             steps {
-                sh 'brew --version'
                 sh 'rbenv init'
             }
         }
