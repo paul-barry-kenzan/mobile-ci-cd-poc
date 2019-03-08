@@ -9,7 +9,7 @@ pipeline {
             agent {
                 docker {
                     image 'eddumelendez/fastlane'
-                    args '--workdir="ios"'
+                    args '-w="./ios"'
                 }
             }
             steps{
