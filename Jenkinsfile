@@ -12,7 +12,7 @@ pipeline {
                 }
             }
             steps {
-                sh 'rbenv init'
+                sh 'echo DO I NEED RBENV?'
             }
         }
         stage('Fastlane') {
@@ -22,7 +22,6 @@ pipeline {
                 }
             }
             steps{
-                sh 'brew install fastlane'
                 sh 'fastlane beta'
             }
         }
