@@ -8,21 +8,11 @@ pipeline {
         stage('build') {
             agent {
                 docker {
-                    image 'paasmule/rbenv'
-                }
-            }
-            steps {
-                sh 'echo DO I NEED RBENV?'
-            }
-        }
-        stage('Fastlane') {
-            agent {
-                docker {
                     image 'eddumelendez/fastlane'
                 }
             }
             steps{
-                sh 'cd ios'
+                sh 'cd ./ios'
                 sh 'fastlane beta'
             }
         }
