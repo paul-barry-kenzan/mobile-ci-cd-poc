@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'linuxbrew/brew'
+            image 'paasmule/rbenv'
         }
     }
     environment {
@@ -12,8 +12,8 @@ pipeline {
         stage('build') {
             steps {
                 sh 'brew --version'
-                sh 'brew install rbenv'
                 sh 'rbenv init'
+                sh 'brew cask install fastlane'
                 sh 'fastlane beta'
             }
         }
