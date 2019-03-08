@@ -22,6 +22,7 @@ pipeline {
                 }
             }
             steps{
+                sh 'cd ios'
                 sh 'fastlane beta'
             }
         }
