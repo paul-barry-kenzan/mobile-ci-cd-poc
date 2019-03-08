@@ -18,7 +18,7 @@ pipeline {
         stage('Fastlane') {
             agent {
                 docker {
-                    image 'fastlanetools/fastlane'
+                    image 'eddumelendez/fastlane'
                 }
             }
             steps{
