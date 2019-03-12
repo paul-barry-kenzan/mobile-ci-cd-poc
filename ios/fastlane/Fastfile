@@ -13,7 +13,8 @@ platform :ios do
     )
 
     increment_build_number(xcodeproj: "mobileCiCdApp.xcodeproj")
-    build_app(scheme: "mobileCiCdApp")
+    setup_jenkins()
+    build_app(scheme: "mobileCiCdApp", export_method: "app-store")
     upload_to_testflight
   end
 
