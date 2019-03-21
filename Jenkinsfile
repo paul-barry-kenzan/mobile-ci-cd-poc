@@ -1,5 +1,5 @@
 pipeline {
-    agent none
+    agent any
     environment {
         LC_ALL = 'en_US.UTF-8'
         LANG = 'en_US.UTF-8'
@@ -7,9 +7,8 @@ pipeline {
     stages {
         stage('build') {
             steps{
-                sh 'pwd'
-                sh 'cd ios'
-                sh 'fastlane beta'
+                sh 'npm install'
+                sh '( cd ios && fastlane beta )'
             }
         }
     }
