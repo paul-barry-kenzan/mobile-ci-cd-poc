@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('build') {
             steps{
-                sh 'pwd'
+                sh 'npm install'
                 sh '( cd ios && fastlane beta )'
             }
         }
