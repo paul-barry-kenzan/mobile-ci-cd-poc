@@ -8,8 +8,7 @@ pipeline {
         stage('build') {
             steps{
                 sh 'pwd'
-                sh 'cd ios'
-                sh 'fastlane beta'
+                sh '( cd ios && fastlane beta )'
             }
         }
     }
