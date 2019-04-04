@@ -12,9 +12,7 @@ pipeline {
                 }
             }
             steps{
-                sh 'pwd'
-                sh 'cd ios'
-                sh 'fastlane beta'
+                sh 'cd ios && fastlane beta'
             }
         }
 
@@ -25,9 +23,7 @@ pipeline {
                 }
             }
             steps{
-                sh 'pwd'
-                sh 'cd android'
-                sh 'fastlane beta'
+                sh 'cd android & fastlane beta'
             }
         }
     }
