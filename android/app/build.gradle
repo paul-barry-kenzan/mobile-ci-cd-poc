@@ -106,7 +106,7 @@ def getPassword(String currentUser, String keyChain) {
    stdout.toString().trim()
 }
 
-def releasekeypass = getPassword("paulbar","awesome-project-release-key")
+def releasekeypass = getPassword("paulbar","android_keystore")
 def releasekeyalias = getPassword("paulbar","awesome-project-key-alias")
 
 android {
@@ -118,7 +118,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.mobileprototype"
+        applicationId "com.mobileCiCdprototype"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
@@ -127,10 +127,10 @@ android {
 
     signingConfigs {
         release {
-            storeFile file(MOBILECICD_RELEASE_STORE_FILE)
-            storePassword releasekeypass
-            keyAlias MOBILECICD_RELEASE_KEY_ALIAS
-            keyPassword releasekeyalias
+            storeFile file("mobile-CiCd.keystore")
+            storePassword "Kenzan123"
+            keyAlias "mobile-CiCd-alias"
+            keyPassword "Kenzan123"
         }
     }
 

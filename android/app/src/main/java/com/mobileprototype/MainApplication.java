@@ -1,4 +1,4 @@
-package com.mobileprototype;
+package com.mobileCiCdprototype;
 
 import android.app.Application;
 

@@ -1,3 +1,5 @@
+android/api-*.json
+
 # OSX
 #
 .DS_Store

@@ -1,0 +1,1 @@
+Using React Native, Fastlane and Jenkins, this prototype hopes to demonstrate the ability to release updates via a CI/CD workflow.

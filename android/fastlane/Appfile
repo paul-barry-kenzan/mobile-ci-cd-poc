@@ -1,0 +1,2 @@
+json_key_file("/Users/PAULBAR/Projects/kenzan/prototype-projects/mobile-ci-cd-again/mobilePrototype/android/api-8086697544029208209-731369-e27f46bebf07.json") # Path to the json secret file - Follow https://docs.fastlane.tools/actions/supply/#setup to get one
+package_name("com.mobileCiCdprototype")
