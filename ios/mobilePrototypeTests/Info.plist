@@ -20,5 +20,7 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>53</string>
+  <key>NSLocationWhenInUseUsageDescription</key>
+	<string>Use location</string>
 </dict>
 </plist>
