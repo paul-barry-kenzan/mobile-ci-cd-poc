@@ -8,7 +8,7 @@ pipeline {
         stage('Release iOS') {
             steps{
                 sh 'npm install'
-                sh '(cd ios && fastlane beta)'
+                sh '(cd ios && bundle install && fastlane beta)'
             }
         }
 
