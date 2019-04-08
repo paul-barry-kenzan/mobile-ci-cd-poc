@@ -20,8 +20,8 @@ export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
+        <Image source={require('./images/kenzan_icon.png')}/>
         <Text style={styles.welcome}>Welcome to Kenzan&apos;s Mobile CI/CD Prototype Project!</Text>
-        <Image src={require('./images/kenzan_icon.png')}/>
         <Text style={styles.instructions}>{instructions}</Text>
       </View>
     );
