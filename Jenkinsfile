@@ -5,12 +5,6 @@ pipeline {
         LANG = 'en_US.UTF-8'
     }
     stages {
-        stage('Release iOS') {
-            steps{
-                sh 'npm install'
-                sh '(cd ios && bundle install && fastlane beta)'
-            }
-        }
 
         stage('Release Android') {
             steps{
