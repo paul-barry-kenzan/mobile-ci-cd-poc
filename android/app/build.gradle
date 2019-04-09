@@ -127,10 +127,12 @@ android {
 
     signingConfigs {
         release {
-            storeFile file("mobile-CiCd.keystore")
-            storePassword "Kenzan123"
-            keyAlias "mobile-CiCd-alias"
-            keyPassword "Kenzan123"
+            if (project.hasProperty('MOBILECICD_RELEASE_STORE_FILE')) {
+              storeFile file(MOBILECICD_RELEASE_STORE_FILE)
+              storePassword "Kenzan123"
+              keyAlias MOBILECICD_RELEASE_KEY_ALIAS
+              keyPassword "Kenzan123"
+            }
         }
     }
 
