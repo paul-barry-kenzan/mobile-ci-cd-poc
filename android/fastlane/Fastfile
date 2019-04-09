@@ -24,6 +24,7 @@ platform :android do
   desc "Submit a new Beta Build to Crashlytics Beta"
   lane :beta do
     gradle(task: "clean assembleRelease")
+    upload_to_play_store
   end
 
   desc "Deploy a new version to the Google Play"

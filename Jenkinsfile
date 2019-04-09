@@ -9,7 +9,7 @@ pipeline {
         stage('Release Android') {
             steps{
                 sh 'npm install'
-                sh '(cd android && export ANDROID_HOME=/Users/paulbar/Library/Android/sdk && fastlane beta)'
+                sh '(cd android && export ANDROID_HOME=/Users/paulbarry-cicdtest/Library/Android/sdk && fastlane beta)'
             }
         }
     }
