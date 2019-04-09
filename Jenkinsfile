@@ -9,7 +9,7 @@ pipeline {
         stage('Release Android') {
             steps{
                 sh 'npm install'
-                sh '(cd android & fastlane beta)'
+                sh '(cd android && fastlane beta)'
             }
         }
     }
