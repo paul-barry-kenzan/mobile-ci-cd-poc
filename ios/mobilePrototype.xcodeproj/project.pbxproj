@@ -1225,7 +1225,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 66;
 				DEAD_CODE_STRIPPING = NO;
@@ -1240,8 +1240,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kenzan.mobilePrototypeCiCd;
 				PRODUCT_NAME = mobilePrototype;
-				PROVISIONING_PROFILE = "f1db4848-5d18-4175-92e1-ece2ed41f12f";
-				PROVISIONING_PROFILE_SPECIFIER = "match Development com.kenzan.mobilePrototypeCiCd";
+				PROVISIONING_PROFILE = "ea25b830-aa49-4e45-9868-9e5381aa6de1";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.kenzan.mobilePrototypeCiCd";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -1251,7 +1251,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 66;
 				DEVELOPMENT_TEAM = CT33V5QFQW;
@@ -1265,8 +1265,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kenzan.mobilePrototypeCiCd;
 				PRODUCT_NAME = mobilePrototype;
-				PROVISIONING_PROFILE = "f1db4848-5d18-4175-92e1-ece2ed41f12f";
-				PROVISIONING_PROFILE_SPECIFIER = "match Development com.kenzan.mobilePrototypeCiCd";
+				PROVISIONING_PROFILE = "ea25b830-aa49-4e45-9868-9e5381aa6de1";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.kenzan.mobilePrototypeCiCd";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
