@@ -6,11 +6,20 @@ pipeline {
     }
     stages {
 
+        stage('Release iOS') {
+            steps{
+                sh 'npm install'
+                sh '(cd ios && bundle install && fastlane beta)'
+            }
+        }
+
+        /* 
         stage('Release Android') {
             steps{
                 sh 'npm install'
                 sh '(cd android && export ANDROID_HOME=/Users/paulbarry-cicdtest/Library/Android/sdk && fastlane beta)'
             }
         }
+        */
     }
 }
