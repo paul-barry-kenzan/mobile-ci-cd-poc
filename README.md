@@ -6,7 +6,7 @@ This is a simple project used to demonstrate the ability to create, modify, sign
 
 ## Technical Difficulties
 
-- In order to successfully deploy an application to the iOS App Store, the Jenkins server must be running on an Apple/OSX machine and running a version of Xcode which is compatable with the targetted iOS version of the application. For example, in order to release an app targeting `iOS 10.3`, Xcode version `10.1` is required. Without this compatability, the application will not be built, thus failing the deployment script.
+- In order to successfully deploy an application to the iOS App Store, the Jenkins server must be running on an Apple/OSX machine and running a version of Xcode which is compatible with the targeted iOS version of the application. For example, in order to release an app targeting `iOS 10.3`, Xcode version `10.1` is required. Without this compatability, the application will not be built, thus failing the deployment script.
 
 - Fastlane is a middle-man communicator between the Jenkins server and App Store Connect. During the development of this POC, the App Store Connect API was updated with breaking changes causing parts of Fastlane to fail. This failure caused deployments to fail until Fastlane was patched to correctly access the App Store Connect API.
 
